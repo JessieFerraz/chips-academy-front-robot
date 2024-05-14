@@ -1,5 +1,6 @@
-[![Robot Framework Tests](https://github.com/JessieFerraz/chips-academy-front-robot/actions/workflows/pipelinefrontend.yml/badge.svg)](https://github.com/JessieFerraz/chips-academy-front-robot/actions/workflows/pipelinefrontend.yml)
 ﻿# chips-academy-front-robot
+ 
+[![Robot Framework Tests](https://github.com/JessieFerraz/chips-academy-front-robot/actions/workflows/pipelinefrontend.yml/badge.svg)](https://github.com/JessieFerraz/chips-academy-front-robot/actions/workflows/pipelinefrontend.yml)
 
 ## Descrição
 Este é um projeto da Qa.Coders Academy de automação de teste Frontend com Robot Framework.
