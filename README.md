@@ -1,5 +1,4 @@
 [![Robot Framework Tests](https://github.com/JessieFerraz/chips-academy-front-robot/actions/workflows/pipelinefrontend.yml/badge.svg)](https://github.com/JessieFerraz/chips-academy-front-robot/actions/workflows/pipelinefrontend.yml)
-
 ﻿# chips-academy-front-robot
 
 ## Descrição
