@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-14T16:56:01.096935" rpa="false" schemaversion="5">
+<suite id="s1" name="testesFrontend academy" source="g:\Meu Drive\Documentos Pessoais\QA\Qa.Coders\Academy\TestesFrontendRobot\tests\testesFrontend_academy.robot">
+<test id="s1-t1" name="Cenário 3: Diretoria" line="35">
+<kw name="Abrir o navegador" owner="login_testes" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:01.950280" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-14T16:56:01.949176" elapsed="2.681874"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-14T16:56:04.632082" elapsed="0.048524"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:01.947849" elapsed="2.733863"/>
+</kw>
+<kw name="Login 1 - Acessar a página Qa.Coders Academy" owner="login_testes">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:04.683217" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-14T16:56:04.682216" elapsed="3.450779"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:04.682216" elapsed="3.450779"/>
+</kw>
+<kw name="Login 2 - Clicar no campo e-mail e digitar e-mail" owner="login_testes">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailSpace}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-14T16:56:08.133992" elapsed="0.046766"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:08.181298" level="INFO">Clicking element '//input[contains(@type,'text')]'.</msg>
+<arg>locator=${emailSpace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:08.180758" elapsed="0.064820"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:08.245578" level="INFO">Typing text 'sysadmin@qacoders.com' into text field '//input[contains(@type,'text')]'.</msg>
+<arg>locator=${emailSpace}</arg>
+<arg>text=${emailInput}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:08.245578" elapsed="0.127066"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:08.133992" elapsed="0.239654"/>
+</kw>
+<kw name="Login 3 - Clicar no campo senha e digitar senha" owner="login_testes">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:08.374640" level="INFO">Clicking element '//input[contains(@type,'password')]'.</msg>
+<arg>locator=${senhaSpace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:08.374640" elapsed="0.059925"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:08.436569" level="INFO">Typing password into text field '//input[contains(@type,'password')]'.</msg>
+<msg time="2024-05-14T16:56:08.469136" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaSpace}</arg>
+<arg>password=${senhaInput}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:08.435570" elapsed="0.072615"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:08.373646" elapsed="0.134539"/>
+</kw>
+<kw name="Login 4 - Clicar no botão Entrar" owner="login_testes">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:08.509721" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium css-ojf4v2'][contains(.,'Entrar')]'.</msg>
+<arg>locator=${entrarButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:08.509721" elapsed="0.062955"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T16:56:13.574295" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T16:56:08.572676" elapsed="5.001619"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:08.508185" elapsed="5.066110"/>
+</kw>
+<kw name="Cadastro 1 - Clicar em Cadastro" owner="diretorias_testes">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:13.576469" level="INFO">Clicking element '//span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Cadastros')]'.</msg>
+<arg>locator=${cadastrosElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:13.575463" elapsed="0.092575"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:13.575463" elapsed="0.093572"/>
+</kw>
+<kw name="Cadastro 2 - Clicar em Diretorias" owner="diretorias_testes">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:13.671614" level="INFO">Clicking element '//span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Diretorias')]'.</msg>
+<arg>locator=${diretoriaElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:13.670034" elapsed="0.053925"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:13.669035" elapsed="0.054924"/>
+</kw>
+<kw name="Cadastro 3 - Clicar em Novo Cadastro Diretoria" owner="diretorias_testes">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${novoCadastroButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-14T16:56:13.725206" elapsed="0.652517"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:14.378726" level="INFO">Clicking button '//button[@class='css-fvzsut'][contains(.,'Novo Cadastro')]'.</msg>
+<arg>locator=${novoCadastroButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:14.377723" elapsed="0.076391"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T16:56:19.455541" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T16:56:14.454114" elapsed="5.002476"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:13.725206" elapsed="5.731384"/>
+</kw>
+<kw name="Cadastro 4 - Clicar no campo 'Dados da Diretoria' e digitar Nome" owner="diretorias_testes">
+<kw name="Name" owner="FakerLibrary">
+<msg time="2024-05-14T16:56:19.459759" level="INFO">${nameDiretoria} = Brian Decker</msg>
+<var>${nameDiretoria}</var>
+<doc>:example: 'John Doe'</doc>
+<status status="PASS" start="2024-05-14T16:56:19.458752" elapsed="0.002001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:19.461753" level="INFO">Clicking element '//input[contains(@class,'MuiInputBase-input MuiInput-input css-mnn31')]'.</msg>
+<arg>locator=${nomeSpace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:19.460753" elapsed="0.067155"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:19.528915" level="INFO">Typing text 'Brian Decker' into text field '//input[contains(@class,'MuiInputBase-input MuiInput-input css-mnn31')]'.</msg>
+<arg>locator=${nomeSpace}</arg>
+<arg>text=${nameDiretoria}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:19.528915" elapsed="0.137455"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:19.457598" elapsed="0.209305"/>
+</kw>
+<kw name="Cadastro 5 - Clicar no botão 'Salvar Nova Diretoria'" owner="diretorias_testes">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:19.668900" level="INFO">Clicking button '//button[@type='submit'][contains(.,'SALVAR NOVO')]'.</msg>
+<arg>locator=${salvarNovoButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:19.667903" elapsed="0.101407"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-14T16:56:24.770957" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-14T16:56:19.769310" elapsed="5.002656"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:19.666903" elapsed="5.106060"/>
+</kw>
+<kw name="Editar 1 - Clicar no botão 'Editar' Diretoria" owner="diretorias_testes">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:24.777957" level="INFO">Clicking button '(//button[@name='editar'][contains(.,'Editar')])[1]'.</msg>
+<arg>locator=${editDiretoriaButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:24.776957" elapsed="0.136248"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:24.774965" elapsed="0.138240"/>
+</kw>
+<kw name="Editar 2 - Clicar no campo 'Nome da Diretoria' e alterar Nome" owner="diretorias_testes">
+<kw name="Name" owner="FakerLibrary">
+<msg time="2024-05-14T16:56:24.915742" level="INFO">${EditNameDiretoria} = Gordon Gonzales</msg>
+<var>${EditNameDiretoria}</var>
+<doc>:example: 'John Doe'</doc>
+<status status="PASS" start="2024-05-14T16:56:24.914741" elapsed="0.001001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:24.916745" level="INFO">Clicking element '//input[contains(@class,'MuiInputBase-input MuiInput-input css-mnn31')]'.</msg>
+<arg>locator=${editNameSpace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:24.915742" elapsed="0.075269"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:24.992016" level="INFO">Typing text 'Gordon Gonzales' into text field '//input[contains(@class,'MuiInputBase-input MuiInput-input css-mnn31')]'.</msg>
+<arg>locator=${editNameSpace}</arg>
+<arg>text=${EditNameDiretoria}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:24.992016" elapsed="0.121956"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:24.914233" elapsed="0.199739"/>
+</kw>
+<kw name="Editar 3 - Clicar no botão 'Salvar Alterações'" owner="diretorias_testes">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:25.117856" level="INFO">Clicking button '//button[@type='submit'][contains(.,'SALVAR ALTERAÇOES')]'.</msg>
+<arg>locator=${salvarAlteracaoButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:25.116865" elapsed="0.094141"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:25.115341" elapsed="0.095665"/>
+</kw>
+<kw name="Logout - Clicar no botão 'Logout'" owner="usuarios_testes">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:56:25.215351" level="INFO">Clicking button '//button[@class='css-1nvbq2d'][contains(.,'Logout')]'.</msg>
+<arg>locator=${logoutButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-14T16:56:25.214353" elapsed="0.649107"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:25.212348" elapsed="0.651112"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:56:01.947849" elapsed="23.915611"/>
+</test>
+<status status="PASS" start="2024-05-14T16:56:01.109543" elapsed="24.755916"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testesFrontend academy">testesFrontend academy</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
